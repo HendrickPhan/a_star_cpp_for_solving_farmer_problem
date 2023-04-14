@@ -1,0 +1,32 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{vietnam}
+\begin{document}
+\tableofcontents
+\section{Lời mở đầu}
+\section{Tổng quan}
+\subsection{Giới thiệu bài toán}
+Bài toán 8-puzzle là một bài toán trò chơi trí tuệ thường được biết với cái tên là "Xếp hình".  8-puzzle vì nó bao gồm một bảng gồm 9 ô vuông (3x3) và 8 ô vuông chứa các con số từ 1 đến 8, còn lại là 1 ô trống.
+Mục tiêu của bài toán là di chuyển các ô vuông để sắp xếp các số từ 1 đến 8 vào vị trí đúng, sao cho ô trống nằm ở vị trí cuối cùng. Trong mỗi lần di chuyển, chỉ có thể đổi chỗ ô trống với một ô vuông kề cạnh nó. 
+Bài toán 8-puzzle là một bài toán NP-khó, nghĩa là không có giải thuật đơn giản để giải quyết nó trong thời gian hợp lý đối với các bảng kích thước lớn. Nhiều giải thuật đã được đề xuất để giải quyết bài toán này, bao gồm giải thuật tìm kiếm theo chiều rộng (BFS), tìm kiếm theo chiều sâu (DFS), thuật toán A* và thuật toán heuristic.
+
+\subsection{Điều kiện để hoàn thành}
+Mỗi ô trong 8- puzzle sẽ có tối đa 4 cách di chuyển để chuyển từ trạng thái này sang trạng thái khác gồm: trái, phải, lên và xuống. Để hoàn thành được bài toán này chúng ta có một quy tắc như sau:
+1/ Theo quy tắc từ trái sang phải, từ trên xuống dưới.
+2/ Ở mỗi ô số duyệt đến, đếm xem có bao nhiêu ô số có giá trị nhỏ hơn giá trị hiện tại đang duyệt.
+3/ Duyệt cho đến khi hết 8 ô và tính tổng số ô có giá trị nhỏ hơn ứng với mỗi ô trên Puzzle.
+4/ Nếu giá trị tổng là số chẵn thì trạng thái hiện tại có thể chuyển về trạng thái đích.
+\section{Gỉải thuật sử dụng}
+\subsection{Tìm kiếm A*}
+\subsubsection{Ý tưởng giải quyết}
+Giải thuật A* và một ví dụ của tìm kiếm theo lựa chọn tốt nhất (best - first search). Mặc dù đây không phải là giải thuật chạy nhanh hơn các giải thuật tìm kiếm đơn giản nhưng A * luôn tìm thấy được đường đi ngắn nhất và luôn đầy đủ và tối ưu nhất.
+\subsection{Ứng dụng thuật toán vào giải quyết bài toán}
+\subsection{Nhận xét}
+Giải thuật A* luôn có tính "đầy đủ" - chúng ta sẽ luôn tìm thấy lời giải nếu bài toán đó có lời giải. Ngoài ra A * còn "tối ưu". Nghĩa là nó không bao giờ đánh giá chi phí đi từ một tới một nút kề nó mà có chi phí thực cao hơn. Và cuối cùng A * còn có tính chát hiệu quả một cách tối ưu với mọi hàm Heuristic.
+\section{Prolog}
+\subsection{Tổng quan về Prolog}
+\subsection{Giới thiệu tổng quan}
+\subsection{Ứng dụng vào giải quyết bài toán}
+\section{Tổng kết}
+\section{Tài liệu tham khảo}
+\end{document}
+
